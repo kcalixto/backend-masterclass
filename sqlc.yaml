@@ -1,0 +1,32 @@
+# COURSE OLD VERSION
+#
+# version: "1"
+# packages:
+#   # name of go package to be generated
+#   - name: "db"
+#     # path to generate golang code
+#     path: "./db/sqlc"
+#     # tell sqlc where to look for query files
+#     queries: "./db/query"
+#     # migration files path
+#     schema: "./db/migration"
+#     engine: "postgresql"
+#     # add golang json tags to generated structs
+#     emit_json_tags: true
+#     # tell sqlc to generate queries with prepared statement to optmize performance
+#     emit_prepared_queries: false
+#     # generate interface package
+#     emit_interface: false
+#     # by default sqlc will try to singularize, removing the s. e.g. accounts -> Account
+#     emit_exact_table_names: false
+
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "./db/query"
+    schema: "./db/migration"
+    gen:
+      go:
+        package: "db"
+        out: "./db/sqlc"
+        emit_json_tags: true
