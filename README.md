@@ -1,3 +1,7 @@
 # backend-masterclass
 
-use makefile to initialize docker
+use makefile to initialize
+
+libs:
+brew install golang-migrate
+brew install sqlc
