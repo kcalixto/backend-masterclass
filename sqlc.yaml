@@ -30,3 +30,4 @@ sql:
         package: "db"
         out: "./db/sqlc"
         emit_json_tags: true
+        emit_empty_slices: true

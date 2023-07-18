@@ -1,6 +1,7 @@
 go 1.19
 
 use (
-    ./db/sqlc
-    ./util
+	./api
+	./db/sqlc
+	./util
 )

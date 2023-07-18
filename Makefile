@@ -20,3 +20,6 @@ sqlc:
 
 test:
 	find . -name go.mod -execdir go test -v -cover ./... \;
+
+server:
+	go run handler/main.go
