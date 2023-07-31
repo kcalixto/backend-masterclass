@@ -23,3 +23,6 @@ test:
 
 server:
 	go run handler/main.go
+
+mock:
+	mockgen -package mockdb -destination db/mock/store.go backend-masterclass/db/sqlc Store

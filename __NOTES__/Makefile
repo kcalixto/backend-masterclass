@@ -30,3 +30,7 @@ exec-docker-2:
 #--------- INSTALL SQLC ---------#
 install-sqlc:
 	brew install sqlc
+
+
+mock:
+	mockgen -package mockdb -destination db/mock/store.go backend-masterclass/db/sqlc Store
